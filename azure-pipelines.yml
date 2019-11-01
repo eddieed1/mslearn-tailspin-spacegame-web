@@ -1,5 +1,6 @@
 pool:
   vmImage: 'Ubuntu-16.04'
+- bash: echo "Hello world"
   demands:
     - npm
 
@@ -49,3 +50,4 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
+
